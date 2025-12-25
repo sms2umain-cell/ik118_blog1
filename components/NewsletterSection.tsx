@@ -10,7 +10,7 @@ export default function NewsletterSection() {
     e.preventDefault();
     
     try {
-      const formData = new FormData();
+      const formData = new URLSearchParams();
       formData.append('email', email);
       
       const response = await fetch('https://readdy.ai/api/form/7b2f9e8c-1a3d-4f6e-8b9c-2e5a7d8f1b4c', {
@@ -18,7 +18,7 @@ export default function NewsletterSection() {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: new URLSearchParams(Object.fromEntries(formData))
+        body: formData
       });
 
       if (response.ok) {
