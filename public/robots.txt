@@ -1,19 +1,19 @@
 User-agent: *
 Allow: /
 Allow: /pokies
-Allow: /pokies/
+Allow: /pokies/*
 Allow: /slot-games
-Allow: /slot-games/
+Allow: /slot-games/*
 Allow: /live-games
-Allow: /live-games/
+Allow: /live-games/*
 Allow: /sports-betting
-Allow: /sports-betting/
+Allow: /sports-betting/*
 Allow: /table-games
 Allow: /jackpots
+Allow: /guides
+Allow: /news
 Allow: /reviews
 Allow: /strategies
-Allow: /news
-Allow: /guides
 Allow: /promotions
 Allow: /about
 Allow: /contact
@@ -21,4 +21,4 @@ Allow: /responsible-gaming
 Disallow: /privacy
 Disallow: /terms
 
-Sitemap: https://ik118.net/sitemap.xml
+Sitemap: https://ik118.online/sitemap.xml

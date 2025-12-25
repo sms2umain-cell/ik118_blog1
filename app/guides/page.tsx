@@ -1,4 +1,3 @@
-
 import { Metadata } from 'next';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -10,13 +9,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Casino How-to Guides & Tutorials | IK118 Australia',
     description: 'Comprehensive how-to guides for online casino gaming in Australia.',
-    url: 'https://www.ik118.net/guides',
+    url: 'https://ik118.online/guides',
     type: 'website',
   },
 };
 
 export default function GuidesPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ik118.net';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ik118.online';
   
   const breadcrumbSchema = {
     "@context": "https://schema.org",

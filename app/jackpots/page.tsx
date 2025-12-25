@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Progressive Jackpots & Mega Wins | IK118 Australia',
     description: 'Chase life-changing progressive jackpots with expert tips and strategies.',
-    url: 'https://www.ik118.net/jackpots',
+    url: 'https://ik118.online/jackpots',
     type: 'website',
   },
 };

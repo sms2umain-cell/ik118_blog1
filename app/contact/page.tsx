@@ -27,8 +27,8 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-bold text-blue-900 mb-2">Email Us</h3>
                 <p className="text-gray-600 mb-3">Send us an email anytime</p>
-                <a href="mailto:support@ik118.net" className="text-blue-600 font-semibold hover:text-blue-700">
-                  support@ik118.net
+                <a href="mailto:support@ik118.online" className="text-blue-600 font-semibold hover:text-blue-700">
+                  support@ik118.online
                 </a>
               </div>
 
