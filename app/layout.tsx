@@ -81,22 +81,22 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
+        <script
+          src="https://readdy.ai/api/public/assistant/widget?projectId=ffe1d2a2-abe1-41fe-bef0-bfbf108f9e16"
+          data-mode="hybrid"
+          data-voice-show-transcript="true"
+          data-theme="light"
+          data-size="compact"
+          data-accent-color="#14B8A6"
+          data-button-base-color="#000000"
+          data-button-accent-color="#FFFFFF"
+          async
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}
       >
         {children}
-        <Script 
-          src="https://readdy.ai/api/public/assistant/widget?projectId=ffe1d2a2-abe1-41fe-bef0-bfbf108f9e16"
-          strategy="afterInteractive"
-          mode="hybrid"
-          voice-show-transcript="true"
-          theme="light"
-          size="compact"
-          accent-color="#f59e0b"
-          button-base-color="#1e3a8a"
-          button-accent-color="#ffffff"
-        />
       </body>
     </html>
   );
