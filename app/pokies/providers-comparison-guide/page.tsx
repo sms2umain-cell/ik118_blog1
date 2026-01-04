@@ -1,12 +1,9 @@
-
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
-  title: "Australian Pokies Providers Comparison: Aristocrat vs Microgaming vs NetEnt | IK118",
-  description: "Compare Australia's top pokies providers with IK118's comprehensive analysis. Discover which developers create the best games for Australian players.",
-  keywords: "Aristocrat vs Microgaming, NetEnt pokies Australia, pokies providers comparison, IK118 provider guide, Australian slot developers, best pokies makers"
+  title: "Pokies Providers Comparison: Best Game Developers | IK118 Expert Review",
+  description: "IK118 compares top pokies providers. Discover which developers create the best games, highest RTPs, and most innovative features.",
+  keywords: "pokies providers comparison, best slot developers, game provider review, IK118 pokies guide, top pokies makers"
 };
 
 export async function generateStaticParams() {
@@ -15,12 +12,8 @@ export async function generateStaticParams() {
 
 export default function ProvidersComparisonPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

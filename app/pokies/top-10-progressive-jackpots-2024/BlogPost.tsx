@@ -37,8 +37,8 @@ export default function BlogPost() {
   ];
 
   return (
-    <article className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-blue-600">Home</Link>
@@ -316,7 +316,7 @@ export default function BlogPost() {
             </Link>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   );
 }

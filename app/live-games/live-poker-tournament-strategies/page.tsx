@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Advanced Live Poker Tournament Strategies | IK118 Pro Guide",
-  description: "Professional tournament tactics for live dealer poker including position play and ICM considerations. IK118's advanced strategy guide for Australian players.",
-  keywords: "live poker tournaments, tournament strategy, ICM poker, position play, IK118, Australian casino, professional poker",
+  title: 'Live Poker Tournament Strategies: Win Big | IK118 Guide',
+  description: 'Master live poker tournaments with IK118 expert strategies. Learn tactics for different stages and table dynamics.',
+  keywords: 'live poker tournaments, IK118 poker strategy, tournament tactics, poker tips, live dealer poker',
 };
 
 export default function LivePokerTournamentStrategiesPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

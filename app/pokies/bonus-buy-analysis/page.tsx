@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'Bonus Buy Features: Are They Worth Your Money? | IK118 Analysis',
-  description: 'IK118 analyzes bonus buy options in modern pokies, calculating expected value and providing strategic advice for Australian players.',
+export const metadata = {
+  title: "Bonus Buy Feature Analysis: Is It Worth It? | IK118 Expert Guide",
+  description: "IK118 analyzes pokies bonus buy features. Learn the mathematics, strategies, and whether purchasing bonus rounds offers value for Australian players.",
+  keywords: "bonus buy pokies, feature buy slots, bonus purchase analysis, IK118 pokies strategy, buy bonus rounds"
 };
 
-export default function BonusBuyPage() {
+export async function generateStaticParams() {
+  return [{ slug: 'bonus-buy-analysis' }];
+}
+
+export default function BonusBuyAnalysisPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

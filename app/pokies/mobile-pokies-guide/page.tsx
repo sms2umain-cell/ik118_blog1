@@ -1,12 +1,9 @@
-
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
-  title: "Mobile Pokies Guide: Best Apps & Mobile Casinos 2024 | IK118 Reviews",
-  description: "Discover the best mobile pokies apps and casinos with IK118's comprehensive 2024 guide. Expert reviews of iOS and Android pokies platforms.",
-  keywords: "mobile pokies Australia, pokies apps 2024, mobile casino Australia, IK118 mobile guide, iPhone pokies, Android pokies apps"
+  title: "Mobile Pokies Guide: Play Anywhere | IK118 Expert Tips",
+  description: "Master mobile pokies gaming with IK118's comprehensive guide. Learn about apps, browsers, and the best mobile-optimized pokies games.",
+  keywords: "mobile pokies guide, pokies apps Australia, mobile casino gaming, IK118 mobile pokies, smartphone pokies"
 };
 
 export async function generateStaticParams() {
@@ -15,12 +12,8 @@ export async function generateStaticParams() {
 
 export default function MobilePokiesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

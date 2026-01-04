@@ -1,7 +1,4 @@
-
 import { Metadata } from 'next';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import LiveGamesHero from './LiveGamesHero';
 import ArticleGrid from './ArticleGrid';
 import TrendingArticles from './TrendingArticles';
@@ -59,14 +56,12 @@ export default function LiveGamesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
-      <Header />
       <main>
         <LiveGamesHero />
         <ArticleGrid />
         <TrendingArticles />
         <LiveGamesNewsletter />
       </main>
-      <Footer />
     </div>
   );
 }

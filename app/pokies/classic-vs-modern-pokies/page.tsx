@@ -1,6 +1,3 @@
-
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
@@ -15,12 +12,8 @@ export async function generateStaticParams() {
 
 export default function ClassicVsModernPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

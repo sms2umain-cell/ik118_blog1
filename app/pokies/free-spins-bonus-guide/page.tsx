@@ -1,12 +1,9 @@
-
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
-  title: "Free Spins Bonus Guide: Maximize Your Pokies Rewards | IK118 Expert Tips",
-  description: "Unlock the secrets of free spins bonuses with IK118's complete guide. Learn to trigger, maximize and profit from bonus features in Australian pokies.",
-  keywords: "free spins pokies Australia, bonus rounds guide, IK118 free spins strategy, pokies bonus features, scatter symbols explained, multiplier bonuses"
+  title: "Free Spins Bonus Guide: Maximize Your Pokies Wins | IK118 Expert Tips",
+  description: "Master free spins bonuses with IK118's complete guide. Learn how to trigger, maximize, and choose the best free spins pokies games.",
+  keywords: "free spins pokies, bonus spins guide, IK118 pokies strategy, free spins features, pokies bonus rounds"
 };
 
 export async function generateStaticParams() {
@@ -15,12 +12,8 @@ export async function generateStaticParams() {
 
 export default function FreeSpinsBonusPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

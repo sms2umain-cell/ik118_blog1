@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'Themed Pokies Guide: Movies, TV Shows, and Pop Culture | IK118',
-  description: 'IK118 explores branded pokies featuring popular themes, licensing deals, and how entertainment franchises translate to gaming success.',
+export const metadata = {
+  title: "Themed Pokies Guide: Best Games by Category | IK118 Expert Reviews",
+  description: "Explore themed pokies with IK118's comprehensive guide. Discover the best games across adventure, mythology, movies, and more categories.",
+  keywords: "themed pokies guide, pokies by theme, branded slots, IK118 pokies reviews, best themed games"
 };
+
+export async function generateStaticParams() {
+  return [{ slug: 'themed-pokies-guide' }];
+}
 
 export default function ThemedPokiesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

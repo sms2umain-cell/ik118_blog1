@@ -1,20 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Slot Machine Myths Debunked: Facts vs Fiction | IK118',
-  description: 'IK118 separates fact from fiction. Debunking common slot myths about hot/cold machines, timing, and winning patterns.',
-  keywords: 'slot myths, IK118 facts, slot machine myths, gambling myths, slot misconceptions, slot truth, debunked myths',
+  title: 'Slot Myths Debunked: Separating Fact from Fiction | IK118',
+  description: 'IK118 debunks common slot myths with facts. Learn the truth about hot/cold machines, RTP, and winning strategies.',
+  keywords: 'slot myths, IK118 facts, gambling myths, slot truth, casino myths debunked, slot misconceptions',
 };
 
 export default function SlotMythsDebunkedPage() {
-  return (
-    <>
-      <Header />
-      <BlogPost />
-      <Footer />
-    </>
-  );
+  return <BlogPost />;
 }

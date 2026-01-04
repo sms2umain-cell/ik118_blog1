@@ -1,21 +1,19 @@
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
-  title: "Top 10 Progressive Jackpot Pokies in Australia 2024 | IK118 Expert Review",
-  description: "Discover Australia's biggest progressive jackpot pokies with IK118's expert analysis. Current jackpot amounts, RTP rates, and winning strategies for 2024.",
-  keywords: "progressive jackpot pokies Australia, biggest jackpots 2024, IK118 pokies review, mega moolah, major millions, progressive slots Australia"
+  title: "Top 10 Progressive Jackpot Pokies 2024 | IK118 Expert Rankings",
+  description: "Discover the top 10 progressive jackpot pokies of 2024 with IK118. Find the biggest jackpots, best odds, and most exciting progressive games.",
+  keywords: "progressive jackpot pokies 2024, biggest jackpots Australia, IK118 pokies rankings, top progressive slots, mega jackpots"
 };
 
-export default function ProgressiveJackpotsPage() {
+export async function generateStaticParams() {
+  return [{ slug: 'top-10-progressive-jackpots-2024' }];
+}
+
+export default function TopProgressiveJackpotsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

@@ -4,38 +4,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function BlogPost() {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    try {
-      const formData = new URLSearchParams();
-      formData.append('email', email);
-
-      const response = await fetch('https://readdy.ai/api/form/d4tr23vsdr6u9jrifbj0', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formData.toString(),
-      });
-
-      if (response.ok) {
-        setIsSubscribed(true);
-        setEmail('');
-        setTimeout(() => setIsSubscribed(false), 5000);
-      }
-    } catch (error) {
-      console.error('Subscription error:', error);
-    }
-  };
-
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
-      <article className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8">
           <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
             <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">Strategy</span>

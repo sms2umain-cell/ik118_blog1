@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const pacifico = Pacifico({
   weight: '400',
@@ -70,27 +71,25 @@ export const viewport = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          async
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-11TNC241M0"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-11TNC241M0');
-            `,
-          }}
+          strategy="afterInteractive"
         />
-        <script
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-11TNC241M0');
+          `}
+        </Script>
+        <Script
           src="https://readdy.ai/api/public/assistant/widget?projectId=ffe1d2a2-abe1-41fe-bef0-bfbf108f9e16"
           strategy="afterInteractive"
           data-mode="hybrid"
@@ -100,10 +99,14 @@ export default function RootLayout({
           data-accent-color="#14B8A6"
           data-button-base-color="#000000"
           data-button-accent-color="#FFFFFF"
-        ></script>
+        />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}
+      >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

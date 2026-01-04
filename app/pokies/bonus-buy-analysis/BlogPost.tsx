@@ -22,8 +22,8 @@ export default function BlogPost() {
   ];
 
   return (
-    <article className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Article Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center text-sm text-gray-500 mb-4">
@@ -281,7 +281,7 @@ export default function BlogPost() {
             ))}
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   );
 }

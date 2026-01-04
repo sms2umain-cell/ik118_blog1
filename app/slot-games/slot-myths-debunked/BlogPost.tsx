@@ -1,7 +1,7 @@
 export default function BlogPost() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-white">
-      <div className="max-w-4xl mx-auto px-6 py-12">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         <nav className="flex items-center gap-2 text-sm text-gray-600 mb-8">
           <a href="/" className="hover:text-purple-600 transition-colors">Home</a>
           <i className="ri-arrow-right-s-line"></i>
@@ -405,7 +405,7 @@ export default function BlogPost() {
             </a>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 }

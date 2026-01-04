@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'Pokies Psychology: Understanding Player Behavior and Addiction | IK118',
-  description: 'IK118\'s comprehensive analysis of pokies psychology, addiction warning signs, and responsible gaming practices for Australian players.',
+export const metadata = {
+  title: "Psychology of Pokies & Responsible Gaming | IK118 Expert Guide",
+  description: "Understand pokies psychology with IK118's responsible gaming guide. Learn how games are designed and how to maintain healthy gaming habits.",
+  keywords: "pokies psychology, responsible gaming, gambling psychology, IK118 responsible pokies, healthy gaming habits"
 };
 
-export default function PsychologyResponsibleGamingPage() {
+export async function generateStaticParams() {
+  return [{ slug: 'psychology-responsible-gaming' }];
+}
+
+export default function PsychologyResponsiblePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

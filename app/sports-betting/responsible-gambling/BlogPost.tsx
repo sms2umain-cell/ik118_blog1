@@ -4,38 +4,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function BlogPost() {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    try {
-      const formData = new URLSearchParams();
-      formData.append('email', email);
-
-      const response = await fetch('https://readdy.ai/api/form/d4tr23vsdr6u9jrifbj0', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formData.toString(),
-      });
-
-      if (response.ok) {
-        setIsSubscribed(true);
-        setEmail('');
-        setTimeout(() => setIsSubscribed(false), 5000);
-      }
-    } catch (error) {
-      console.error('Subscription error:', error);
-    }
-  };
-
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
-      <article className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         <img
           src="https://readdy.ai/api/search-image?query=Responsible%20gambling%20concept%20with%20balanced%20scales%2C%20protective%20shield%20symbols%2C%20supportive%20hands%2C%20calm%20and%20professional%20atmosphere%2C%20clean%20modern%20design%2C%20bright%20hopeful%20lighting%2C%20photo%20realistic%20style%20with%20positive%20messaging&width=1200&height=600&seq=responsible-gambling-hero&orientation=landscape"
           alt="Responsible Gambling Guide"

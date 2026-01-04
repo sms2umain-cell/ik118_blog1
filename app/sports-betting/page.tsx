@@ -1,7 +1,4 @@
-
 import { Metadata } from 'next';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import SportsBettingHero from './SportsBettingHero';
 import ArticleGrid from './ArticleGrid';
 import SportsBettingNewsletter from './SportsBettingNewsletter';
@@ -58,13 +55,11 @@ export default function SportsBettingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
-      <Header />
       <main>
         <SportsBettingHero />
         <ArticleGrid />
         <SportsBettingNewsletter />
       </main>
-      <Footer />
     </div>
   );
 }

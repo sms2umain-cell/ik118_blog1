@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'Buffalo Gold and Buffalo Series: Complete Game Analysis | IK118 Review',
-  description: 'IK118\'s detailed analysis of Aristocrat\'s Buffalo series including Buffalo Gold, Diamond, and Link games with strategies and RTP data.',
+export const metadata = {
+  title: "Buffalo Pokies Series Complete Review | IK118 Expert Analysis",
+  description: "IK118's comprehensive review of the Buffalo pokies series. Discover why these Aristocrat games remain Australia's most popular pokies franchise.",
+  keywords: "Buffalo pokies review, Buffalo Gold slots, Aristocrat Buffalo series, IK118 pokies guide, Buffalo pokies strategy"
 };
+
+export async function generateStaticParams() {
+  return [{ slug: 'buffalo-series-review' }];
+}
 
 export default function BuffaloSeriesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

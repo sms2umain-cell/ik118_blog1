@@ -1,21 +1,19 @@
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
-  title: "RTP Explained: Finding the Best Value Pokies Games | IK118 Expert Analysis",
-  description: "Master RTP rates with IK118's comprehensive guide. Discover which Australian pokies offer the best value and learn how to identify high-return games.",
-  keywords: "RTP pokies Australia, return to player explained, best value pokies, IK118 RTP analysis, high RTP slots Australia, pokies odds explained"
+  title: "RTP Explained: Find Best Value Pokies | IK118 Expert Guide",
+  description: "Master RTP with IK118's complete guide. Learn how Return to Player works and discover the highest RTP pokies for best value gaming.",
+  keywords: "RTP explained, Return to Player pokies, highest RTP games, IK118 pokies guide, best value pokies"
 };
+
+export async function generateStaticParams() {
+  return [{ slug: 'rtp-explained-best-value-games' }];
+}
 
 export default function RTPExplainedPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

@@ -1,7 +1,4 @@
-
 import { Metadata } from 'next';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import SlotGamesHero from './SlotGamesHero';
 import ArticleGrid from './ArticleGrid';
 import SlotGamesNewsletter from './SlotGamesNewsletter';
@@ -58,13 +55,11 @@ export default function SlotGamesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
-      <Header />
       <main>
         <SlotGamesHero />
         <ArticleGrid />
         <SlotGamesNewsletter />
       </main>
-      <Footer />
     </div>
   );
 }

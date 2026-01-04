@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Live Casino Technology and Streaming Quality | IK118 Technical Guide",
-  description: "Understanding HD streaming, multiple camera angles, OCR technology, and gaming infrastructure in live dealer games. IK118's comprehensive technical guide for Australian players.",
-  keywords: "live casino technology, HD streaming, OCR technology, live dealer tech, IK118, gaming infrastructure, Australian casino",
+  title: 'Live Casino Technology: Behind the Scenes | IK118 Guide',
+  description: 'Explore live casino technology with IK118. Learn how live streaming, RNG, and security systems work.',
+  keywords: 'live casino technology, IK118 casino tech, live streaming, casino security, gaming technology',
 };
 
 export default function LiveCasinoTechnologyPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

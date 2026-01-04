@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Betting Psychology: Controlling Emotions and Avoiding Tilt | IK118",
-  description: "Master the mental game of sports betting with IK118's psychological strategies for discipline, patience, and emotional control.",
-  keywords: "betting psychology, emotional control, discipline, tilt management, IK118, sports betting mindset",
+  title: 'Betting Psychology: Master Your Mindset | IK118 Guide',
+  description: 'Understand betting psychology with IK118. Learn to control emotions, avoid tilt, and make rational betting decisions.',
+  keywords: 'betting psychology, IK118 mindset, emotional control, betting discipline, gambling psychology',
 };
 
 export default function BettingPsychologyPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

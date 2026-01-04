@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'VIP Programs Guide: Maximizing Casino Rewards and Benefits | IK118',
-  description: 'IK118\'s comprehensive guide to casino VIP programs, loyalty rewards, and maximizing benefits from your pokies gaming activities.',
+export const metadata = {
+  title: "VIP Pokies Programs Guide: Maximize Rewards | IK118 Expert Tips",
+  description: "Master casino VIP programs with IK118's complete guide. Learn how to maximize rewards, climb tiers, and unlock exclusive pokies benefits.",
+  keywords: "VIP pokies programs, casino loyalty rewards, IK118 VIP guide, pokies rewards programs, casino tier benefits"
 };
+
+export async function generateStaticParams() {
+  return [{ slug: 'vip-programs-guide' }];
+}
 
 export default function VIPProgramsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

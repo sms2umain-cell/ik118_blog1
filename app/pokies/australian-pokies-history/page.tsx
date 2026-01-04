@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'Australian Pokies History: From Mechanical to Digital Evolution | IK118',
-  description: 'Explore the complete history of Australian pokies from 1950s mechanical machines to modern digital gaming with IK118\'s comprehensive timeline.',
+export const metadata = {
+  title: "History of Australian Pokies: From Mechanical to Digital | IK118 Complete Guide",
+  description: "Explore the fascinating evolution of Australian pokies with IK118. Learn how pokies became Australia's favorite gaming entertainment from the 1950s to today.",
+  keywords: "Australian pokies history, pokies evolution Australia, gaming machines history, IK118 pokies guide, Australian gambling history"
 };
+
+export async function generateStaticParams() {
+  return [{ slug: 'australian-pokies-history' }];
+}
 
 export default function AustralianPokiesHistoryPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

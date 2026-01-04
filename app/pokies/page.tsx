@@ -1,7 +1,4 @@
-
 import { Metadata } from 'next';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import PokiesHero from './PokiesHero';
 import ArticleGrid from './ArticleGrid';
 import PokiesNewsletter from './PokiesNewsletter';
@@ -58,13 +55,11 @@ export default function PokiesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
-      <Header />
       <main>
         <PokiesHero />
         <ArticleGrid />
         <PokiesNewsletter />
       </main>
-      <Footer />
     </div>
   );
 }

@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Mobile Live Casino Gaming Guide | IK118 Optimization Tips",
-  description: "Optimize your mobile live dealer experience with device recommendations and connectivity tips. IK118's complete mobile gaming guide for Australian players.",
-  keywords: "mobile live casino, mobile gaming, live dealer mobile, smartphone casino, IK118, Australian casino, mobile optimization",
+  title: 'Mobile Live Casino Guide: Play Anywhere | IK118 Tips',
+  description: 'Master mobile live casino gaming with IK118. Learn about apps, optimization, and the best mobile live games.',
+  keywords: 'mobile live casino, IK118 mobile gaming, live casino apps, mobile live dealer, smartphone casino',
 };
 
 export default function MobileLiveCasinoGuidePage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

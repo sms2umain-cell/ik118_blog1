@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
@@ -10,11 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function HighRTPSlots2025Page() {
-  return (
-    <>
-      <Header />
-      <BlogPost />
-      <Footer />
-    </>
-  );
+  return <BlogPost />;
 }

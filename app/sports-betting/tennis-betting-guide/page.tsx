@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Tennis Betting Guide: Grand Slam and ATP Strategies | IK118",
-  description: "IK118's comprehensive tennis betting strategies covering Grand Slams, ATP Tour, and live betting techniques for maximum profit.",
-  keywords: "tennis betting, Grand Slam betting, ATP betting, tennis tips, Australian Open, IK118, sports betting",
+  title: 'Tennis Betting Guide: Win on the Court | IK118 Strategies',
+  description: 'Master tennis betting with IK118 comprehensive guide. Learn strategies for Grand Slams, ATP, and WTA tournaments.',
+  keywords: 'tennis betting, IK118 tennis tips, Grand Slam betting, ATP betting, WTA betting, tennis strategies',
 };
 
 export default function TennisBettingGuidePage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

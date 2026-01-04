@@ -1,12 +1,9 @@
-
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
 export const metadata = {
-  title: "Lightning Link Pokies Strategy: Complete Review & Tips | IK118 Expert Guide",
-  description: "Master Lightning Link pokies with IK118's complete strategy guide. Learn winning techniques, bonus features, and expert tips for Australia's favorite game.",
-  keywords: "Lightning Link strategy Australia, Lightning Link pokies tips, IK118 Lightning Link guide, Aristocrat pokies strategy, progressive jackpot tips"
+  title: "Lightning Link Pokies Strategy Guide | IK118 Expert Tips",
+  description: "Master Lightning Link pokies with IK118's comprehensive strategy guide. Learn how to maximize Hold & Spin features and trigger jackpots.",
+  keywords: "Lightning Link strategy, Lightning Link pokies, Aristocrat pokies guide, IK118 pokies tips, Hold and Spin strategy"
 };
 
 export async function generateStaticParams() {
@@ -15,12 +12,8 @@ export async function generateStaticParams() {
 
 export default function LightningLinkPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

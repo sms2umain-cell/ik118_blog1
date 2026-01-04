@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Statistical Analysis for Sports Betting Success | IK118",
-  description: "IK118's data-driven approach to sports betting, covering advanced statistics, predictive modeling, and analytical tools.",
-  keywords: "statistical analysis, sports analytics, predictive modeling, data-driven betting, IK118, betting statistics",
+  title: 'Statistical Analysis for Betting: Data-Driven Wins | IK118',
+  description: 'Master statistical analysis with IK118. Learn to use data and analytics for smarter betting decisions.',
+  keywords: 'betting statistics, IK118 data analysis, sports analytics, betting data, statistical betting',
 };
 
 export default function StatisticalAnalysisPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

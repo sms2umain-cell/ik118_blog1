@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "NRL Betting Strategies: How to Beat the Bookmakers | IK118",
-  description: "Master NRL betting with IK118's proven strategies. Learn line betting, player props, statistical analysis, and live betting techniques for rugby league success.",
-  keywords: "NRL betting, rugby league betting, NRL tips, line betting, player props, IK118, sports betting Australia",
+  title: 'NRL Betting Strategies: Rugby League Tips | IK118 Guide',
+  description: 'Master NRL betting with IK118 expert strategies. Learn winning tips for Rugby League betting markets.',
+  keywords: 'NRL betting, IK118 rugby league, NRL tips, rugby betting strategies, league betting',
 };
 
 export default function NRLBettingStrategiesPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

@@ -5,21 +5,8 @@ import Link from 'next/link';
 
 export default function BlogPost() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Navigation */}
-      <div className="bg-gray-50 border-b">
-        <div className="container mx-auto px-4 py-3">
-          <nav className="flex items-center text-sm text-gray-600">
-            <Link href="/" className="hover:text-blue-900 cursor-pointer">Home</Link>
-            <i className="ri-arrow-right-s-line mx-2"></i>
-            <Link href="/pokies" className="hover:text-blue-900 cursor-pointer">Pokies</Link>
-            <i className="ri-arrow-right-s-line mx-2"></i>
-            <span className="text-gray-900">Free Spins Bonus Guide</span>
-          </nav>
-        </div>
-      </div>
-
-      <article className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center text-sm text-gray-600 mb-4">
@@ -227,6 +214,6 @@ export default function BlogPost() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

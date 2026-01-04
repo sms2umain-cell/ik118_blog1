@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Bookmaker Comparison: Finding the Best Odds in Australia | IK118",
-  description: "IK118's comprehensive comparison of Australian bookmakers, analyzing odds quality, bonuses, and betting features.",
-  keywords: "bookmaker comparison, best odds, Australian bookmakers, betting sites, IK118, sports betting",
+  title: 'Bookmaker Comparison: Find the Best Odds | IK118 Guide',
+  description: 'Compare top bookmakers with IK118. Discover which sportsbooks offer the best odds, markets, and features.',
+  keywords: 'bookmaker comparison, IK118 sportsbooks, best betting sites, odds comparison, bookmaker review',
 };
 
 export default function BookmakerComparisonPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

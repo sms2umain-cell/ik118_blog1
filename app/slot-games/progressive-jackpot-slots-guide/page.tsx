@@ -1,20 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Progressive Jackpot Slots: Complete Winning Guide 2025 | IK118',
-  description: 'Master progressive jackpot slots with IK118. Learn how to maximize your chances of hitting life-changing wins on Mega Moolah, Mega Fortune, and more top progressive games.',
-  keywords: 'progressive jackpot slots, IK118 jackpots, Mega Moolah, Mega Fortune, online jackpot wins, progressive slot strategy, jackpot slot games',
+  title: 'Progressive Jackpot Slots: Complete Winning Guide | IK118',
+  description: 'Chase life-changing wins with IK118 progressive jackpot guide. Learn how progressive slots work and which games offer the biggest prizes.',
+  keywords: 'progressive jackpot slots, IK118 jackpots, Mega Moolah, progressive slots guide, jackpot strategy, big win slots',
 };
 
 export default function ProgressiveJackpotSlotsGuidePage() {
-  return (
-    <>
-      <Header />
-      <BlogPost />
-      <Footer />
-    </>
-  );
+  return <BlogPost />;
 }

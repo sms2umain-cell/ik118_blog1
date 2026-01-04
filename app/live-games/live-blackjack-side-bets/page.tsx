@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Live Blackjack Side Bets Analysis | IK118 Mathematical Guide",
-  description: "Mathematical analysis of Perfect Pairs, 21+3, and other popular live blackjack side bets. IK118's expert guide for Australian players.",
-  keywords: "blackjack side bets, Perfect Pairs, 21+3, live blackjack, IK118, side bet strategy, Australian casino",
+  title: 'Live Blackjack Side Bets: Worth the Risk? | IK118 Analysis',
+  description: 'Analyze blackjack side bets with IK118. Learn which side bets offer value and which to avoid.',
+  keywords: 'blackjack side bets, IK118 blackjack, side bet analysis, live blackjack, blackjack strategy',
 };
 
 export default function LiveBlackjackSideBetsPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

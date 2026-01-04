@@ -1,22 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import BlogPost from './BlogPost';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Bankroll Management for Live Casino Games | IK118 Professional Guide",
-  description: "Professional money management strategies specifically designed for live dealer gaming sessions. IK118's expert bankroll management guide for Australian players.",
-  keywords: "bankroll management, live casino, money management, betting strategy, IK118, Australian casino, live dealer",
+  title: 'Live Casino Bankroll Management: Protect Your Funds | IK118',
+  description: 'Master live casino bankroll management with IK118. Learn to protect your funds and extend your gaming sessions.',
+  keywords: 'live casino bankroll, IK118 money management, casino budget, bankroll strategy, responsible gaming',
 };
 
 export default function LiveCasinoBankrollManagementPage() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <BlogPost />;
 }

@@ -1,10 +1,8 @@
 
-import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import GameCategories from '../components/GameCategories';
 import FeaturedContent from '../components/FeaturedContent';
 import NewsletterSection from '../components/NewsletterSection';
-import Footer from '../components/Footer';
 
 export default function HomePage() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ik118.net';
@@ -45,14 +43,12 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <Header />
       <main>
         <HeroSection />
         <GameCategories />
         <FeaturedContent />
         <NewsletterSection />
       </main>
-      <Footer />
     </div>
   );
 }

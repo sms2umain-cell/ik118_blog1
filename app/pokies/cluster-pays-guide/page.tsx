@@ -1,21 +1,19 @@
-import { Metadata } from 'next';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import BlogPost from './BlogPost';
 
-export const metadata: Metadata = {
-  title: 'Cluster Pays Pokies: New Ways to Win Big | IK118 Gaming Guide',
-  description: 'Discover the innovative cluster pays mechanism with IK118\'s comprehensive guide to games, strategies, and maximum winning potential.',
+export const metadata = {
+  title: "Cluster Pays Pokies Guide: Complete Strategy | IK118 Expert Tips",
+  description: "Learn cluster pays mechanics with IK118's comprehensive guide. Discover how these innovative pokies work and find the best cluster pays games.",
+  keywords: "cluster pays pokies, cluster wins slots, IK118 pokies guide, cluster pays strategy, no paylines pokies"
 };
+
+export async function generateStaticParams() {
+  return [{ slug: 'cluster-pays-guide' }];
+}
 
 export default function ClusterPaysPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <BlogPost />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BlogPost />
+    </main>
   );
 }

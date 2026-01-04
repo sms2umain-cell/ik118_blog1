@@ -4,38 +4,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function BlogPost() {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    try {
-      const formData = new URLSearchParams();
-      formData.append('email', email);
-
-      const response = await fetch('https://readdy.ai/api/form/d4tr23vsdr6u9jrifbj0', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formData.toString(),
-      });
-
-      if (response.ok) {
-        setIsSubscribed(true);
-        setEmail('');
-        setTimeout(() => setIsSubscribed(false), 5000);
-      }
-    } catch (error) {
-      console.error('Subscription error:', error);
-    }
-  };
-
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
-      <article className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-white">
+      <article className="max-w-4xl mx-auto px-4 py-12">
         <img
           src="https://readdy.ai/api/search-image?query=Multiple%20sports%20betting%20tickets%20and%20odds%20displays%20showing%20combined%20bets%2C%20professional%20betting%20slip%20with%20multiple%20selections%2C%20modern%20sports%20betting%20interface%20with%20parlay%20combinations%2C%20clean%20design%2C%20bright%20lighting%2C%20photo%20realistic%20style&width=1200&height=600&seq=multi-bets-parlays-hero&orientation=landscape"
           alt="Multi Bets and Parlays Guide"

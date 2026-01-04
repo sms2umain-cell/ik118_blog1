@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Casino Industry News & Updates | IK118 Australia',
@@ -42,7 +40,6 @@ export default function NewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Header />
       <div className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -173,7 +170,6 @@ export default function NewsPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

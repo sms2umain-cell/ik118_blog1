@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function ThemedSlotsCollectionBlogPost() {
+export default function BlogPost() {
   const themeCategories = [
     {
       name: '古埃及主题',
@@ -151,7 +151,7 @@ export default function ThemedSlotsCollectionBlogPost() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-white">
+    <div className="min-h-screen bg-white">
       <article className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8">
           <Link 
