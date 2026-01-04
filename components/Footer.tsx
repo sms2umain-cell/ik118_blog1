@@ -52,21 +52,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-blue-800 mt-8 pt-8 text-center">
           <p className="text-blue-200 text-sm">
             © 2025 IK118. All rights reserved. | 18+ Only | Gamble Responsibly
           </p>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <span className="text-blue-200 text-sm">•</span>
-            <Link 
-              href="https://readdy.ai/?origin=logo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-200 hover:text-amber-400 transition-colors text-sm"
-            >
-              Made with Readdy
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
