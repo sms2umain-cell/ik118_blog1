@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const pacifico = Pacifico({
   weight: '400',
@@ -69,20 +70,29 @@ export const viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://www.ik118.net/" />
-        <link rel="icon" href="https://ik118.net/media/a5beea7efb776a8bb36ad.png" />
-        <meta name="theme-color" content="#1e3a8a" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="format-detection" content="telephone=no" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-11TNC241M0"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-11TNC241M0');
+            `,
+          }}
+        />
         <script
           src="https://readdy.ai/api/public/assistant/widget?projectId=ffe1d2a2-abe1-41fe-bef0-bfbf108f9e16"
+          strategy="afterInteractive"
           data-mode="hybrid"
           data-voice-show-transcript="true"
           data-theme="light"
@@ -90,12 +100,9 @@ export default function RootLayout({
           data-accent-color="#14B8A6"
           data-button-base-color="#000000"
           data-button-accent-color="#FFFFFF"
-          async
-        />
+        ></script>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}>
         {children}
       </body>
     </html>
